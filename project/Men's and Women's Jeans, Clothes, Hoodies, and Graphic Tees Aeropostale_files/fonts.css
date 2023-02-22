@@ -1,0 +1,94 @@
+@font-face {
+    font-display: swap;
+    font-family: "Gotham-Black";
+    font-weight: 900;
+    src: url("../fonts/Gotham-Black.eot?#iefix");
+    src: url("../fonts/Gotham-Black.eot?#iefix") format("eot"), url("../fonts/Gotham-Black.woff2") format("woff2") /* Super Modern Browsers */, url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.ttf") format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Gotham-Bold";
+    font-weight: 700;
+    src: url("../fonts/Gotham-Bold.eot?#iefix");
+    src: url("../fonts/Gotham-Bold.eot?#iefix") format("eot"), url("../fonts/Gotham-Bold.woff2") format("woff2") /* Super Modern Browsers */, url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Gotham-Medium";
+    font-weight: 500;
+    src: url("../fonts/Gotham-Medium.eot?#iefix");
+    src: url("../fonts/Gotham-Medium.eot?#iefix") format("eot"), url("../fonts/Gotham-Medium.woff2") format("woff2") /* Super Modern Browsers */, url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Gotham-Book";
+    font-weight: 400;
+    src: url("../fonts/Gotham-Book.eot?#iefix");
+    src: url("../fonts/Gotham-Book.eot?#iefix") format("eot"), url("../fonts/Gotham-Medium.woff2") format("woff2") /* Super Modern Browsers */, url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Gotham-Light";
+    font-weight: 300;
+    src: url("../fonts/Gotham-Light.eot?#iefix");
+    src: url("../fonts/Gotham-Light.eot?#iefix") format("eot"), url("../fonts/Gotham-Light.woff2") format("woff2") /* Super Modern Browsers */, url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: "VisueltPro-Bold";
+    font-weight: 700;
+    src: url("../fonts/VisueltPro-Bold.eot?#iefix");
+    src: url("../fonts/VisueltPro-Bold.eot?#iefix") format("eot"), url("../fonts/VisueltPro-Bold.woff2") format("woff2") /* Super Modern Browsers */, url("../fonts/VisueltPro-Bold.woff") format("woff"), url("../fonts/VisueltPro-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url('../fonts/VisueltPro-Bold.eot');
+    src: local('Visuelt Pro Bold'), local('VisueltPro-Bold'),
+        url('../fonts/VisueltPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VisueltPro-Bold.woff2') format('woff2'),
+        url('../fonts/VisueltPro-Bold.woff') format('woff'),
+        url('../fonts/VisueltPro-Bold.ttf') format('truetype'),
+        url('../fonts/VisueltPro-Bold.svg#VisueltPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url('../fonts/VisueltPro-Light.eot');
+    src: local('Visuelt Pro Light'), local('VisueltPro-Light'),
+        url('../fonts/VisueltPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VisueltPro-Light.woff2') format('woff2'),
+        url('../fonts/VisueltPro-Light.woff') format('woff'),
+        url('../fonts/VisueltPro-Light.ttf') format('truetype'),
+        url('../fonts/VisueltPro-Light.svg#VisueltPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url('../fonts/VisueltPro-Medium.eot');
+    src: local('Visuelt Pro Medium'), local('VisueltPro-Medium'),
+        url('../fonts/VisueltPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VisueltPro-Medium.woff2') format('woff2'),
+        url('../fonts/VisueltPro-Medium.woff') format('woff'),
+        url('../fonts/VisueltPro-Medium.ttf') format('truetype'),
+        url('../fonts/VisueltPro-Medium.svg#VisueltPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url('../fonts/VisueltPro-Regular.eot');
+    src: local('Visuelt Pro Regular'), local('VisueltPro-Regular'),
+        url('../fonts/VisueltPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VisueltPro-Regular.woff2') format('woff2'),
+        url('../fonts/VisueltPro-Regular.woff') format('woff'),
+        url('../fonts/VisueltPro-Regular.ttf') format('truetype'),
+        url('../fonts/VisueltPro-Regular.svg#VisueltPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

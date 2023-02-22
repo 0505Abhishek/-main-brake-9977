@@ -1,0 +1,1 @@
+(()=>{"use strict";var i={CUSTOM_EMAIL_LEAD_EVENTS:function(i){var t=i.email;try{var n,l,e,d,a=(null===(n=window.triggermail)||void 0===n||null===(l=n.identifySource)||void 0===l?void 0:l.EMAIL_SIGNUP)||"";null===(e=window.triggermail)||void 0===e||null===(d=e.util)||void 0===d||d.validateAndIdentify(t,a,"attentive popup")}catch(i){}}};window.__attentive_client_cfg=i})();

@@ -1,0 +1,50 @@
+
+
+    @font-face {
+        font-family: "Whitman Display Condensed Regular";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/Whitman Display Condensed Regular.otf?#iefix");
+    }
+
+    @font-face {
+        font-family: "Whitman Display Compressed Bold";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/Whitman Display Compressed Bold.otf?#iefix");
+    }
+
+    @font-face {
+        font-family: "Whitman Display Condensed Extra Bold";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/Whitman Display Condensed Extra Bold.otf?#iefix");
+    }
+
+    @font-face {
+        font-family: "Whitman Display Compressed Light";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/Whitman Display Compressed Light.otf?#iefix");
+    }
+
+    @font-face {
+        font-family: "Whitman Display Semi Bold";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/Whitman Display Semi Bold.otf?#iefix");
+    }
+
+    @font-face {
+        font-family: "Visuelt Bold Pro";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-bold-pro.otf?#iefix");
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-bold-pro.eot?#iefix") format("eot"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-bold-pro.woff2") format("woff2"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-bold-pro.woff") format("woff"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-bold-pro.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Visuelt Medium Pro";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-medium-pro.otf?#iefix");
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-medium-pro.eot?#iefix") format("eot"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-medium-pro.woff2") format("woff2"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-medium-pro.woff") format("woff"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-medium-pro.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Visuelt Regular Pro";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-regular-pro.otf?#iefix");
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-regular-pro.eot?#iefix") format("eot"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-regular-pro.woff2") format("woff2"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-regular-pro.woff") format("woff"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-regular-pro.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Visuelt Light Pro";
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-light-pro.otf?#iefix");
+        src: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-light-pro.eot?#iefix") format("eot"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-light-pro.woff2") format("woff2"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-light-pro.woff") format("woff"), url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6bfa99c1/fonts/visuelt-light-pro.ttf") format("truetype");
+    }
