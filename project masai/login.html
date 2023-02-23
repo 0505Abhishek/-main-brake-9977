@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8a24ccc1f0.js" crossorigin="anonymous"></script>
+    <style>
+        #nav
+        {
+            display:flex;
+            justify-content:space-evenly;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height:110px;
+            align-items: center;
+        }
+        #link
+        {
+            display:flex;
+            width:28%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #link a
+        {
+            text-decoration:none;
+            color: black;
+            font-size: 20px;
+        }
+        #last
+        {
+            width:30%;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        #last input
+        {
+            display:flex;
+            margin-top:20px;
+            padding:15px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+        }
+        #last .fa-solid 
+        {
+            font-size:25px;
+        }
+        #last .hide button
+        {
+          color:black;
+          background-color:white; 
+        }
+        #last .hide a
+        {
+            text-decoration:none;
+        } 
+        .form
+        {
+          width:30%;
+          margin:auto;
+          margin-bottom:100px;
+        }
+        .form .div1
+        {
+            display:flex;
+            justify-content:space-between;
+        }
+        .form input
+        {
+            width:100%;
+            height:40px;
+        }
+
+
+        .container8
+        {
+          display:flex;
+        }
+        .container8 div
+        {
+          display:flex;
+          flex-direction:column;
+          width:100%;
+        }
+        .container8 a
+        {
+            text-decoration:none;
+            color:black;
+            margin-top:15px;
+        }
+        .container8 .icon
+        {
+            display:flex; flex-direction:row;
+        }
+        .container8 .icon i
+        {
+            margin-left:10px;
+            font-size:20px;
+        }
+        .container8 a:hover
+        {
+             text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+  <div class="main">
+    <div id="nav">
+        <div id="link">
+           <a href="">Women</a>
+           <a href="">Men</a>
+           <a href="">Jeans</a>
+           <a href="">Clearance</a>
+        </div>
+        <div id="logo">
+            <a href="page1.html"><img src="logo.jpg" alt="error"></a>
+        </div>
+        <div id="last">
+           <input type="text" placeholder="Search">
+           <i class="fa-solid fa-location-dot"></i>
+           <i class="fa-solid fa-address-book"></i>
+           <div style="width:100px;background-color: white;" class="hide">
+            <a href="register.html"><button>Registration</button></a>
+            <button><a href="login.html">Sign-in</a></button>
+           </div>
+           <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        </div>
+
+        <div class="form">
+            <h1>Returing Customer</h1>
+            <p>If you are a registered user, please enter your email and password</p>
+            <hr>
+         <form id="Mform">
+          <p>Email</p>
+          <input type="email" id="email" placeholder="EMAIL ADDRESS">
+          <hr>
+          
+          <p>Password</p>
+          <input type="password" id="pass" placeholder="PASSWORD">
+          <hr>
+          <button style="background-color:darkblue;color:white; width:40%; height:40px;border-radius:15px;">SIGN IN</button>
+         </form>
+        </div>
+  
+
+        
+        <div class="container8">
+            <div>
+                <a href="">Store</a>
+                <a href="">Order Status</a>
+                <a href="">Gift Cards/Balance</a>
+                <a href="">Feedback</a>
+            </div>
+            <div>
+                <h4 style="color:darkblue;">Shopping Help</h4>
+                <a href="">Help Desk</a>
+                <a href="">Returns & Exchanges</a>
+                <a href="">Price and price Match Policy</a>
+                <a href="">Shipping & Handling</a>
+                <a href="">Size Charts</a>
+                <a href="">Buy Online,Pick Up In store</a>
+            </div>
+            <div>
+                <h4 style="color:darkblue;">Questions?</h5>
+                <a style="font-weight:bold;" href="">Chat With Us</a>
+                <p>Available9AM-12AMEST</p>
+                <a style="font-weight:bold;" href="">Call Us</a>
+                <p>1.877.289.2376</p>
+                <a style="font-weight:bold;" href="">Contact Us</a>
+            </div>
+            <div>
+                <h4 style="color:darkblue;">About Us</h4>
+                <a href="">About Aeropostale</a>
+                <a href="">Carrers</a>
+                <a href="">Supply Chain</a>
+                <a href="">Shipping & Handling</a>
+                <a href="">Aero impact</a>
+            </div>
+            <div>
+                <h4 style="color:darkblue;">Get the latest styles & offers:</h4>
+                <input style="width:200px;border-radius:20px;border:2px solid black; height:40px;" type="text" placeholder="Enter Email">
+                <p style="font-size:11px;">For more information, please see our Privacy Policy. California residents, see our California Privacy Notice and Do Not Sell My Personal Information page.</p>
+                <h4 style="color:darkblue;">Follow Us</h4>
+                <div class="icon">
+                    <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+           </div>
+
+  </div>
+</body>
+</html>
+<script>
+         let ls=JSON.parse(localStorage.getItem("data"));
+    if(ls===null)
+    {
+        ls=[];
+    }
+
+    let form=document.getElementById("Mform");
+    form.addEventListener("submit",function(event){
+        let email=document.getElementById("email").value;
+        let password=document.getElementById("pass").value;
+        
+        for(let i=0;i<ls.length;i++)
+        {
+            if(ls[i].email===email && ls[i].password===password)
+            {
+              window.location.href="page1.html";   
+            }
+        }
+        alert("Please Register First");
+    })
+</script>
