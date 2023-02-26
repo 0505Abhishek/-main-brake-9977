@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8a24ccc1f0.js" crossorigin="anonymous"></script>
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main
+        {
+          margin-left:10px;
+          margin-right:10px;
+        }
+        #nav
+        {
+            display:flex;
+            justify-content:space-evenly;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height:110px;
+            align-items: center;
+        }
+        #link
+        {
+            display:flex;
+            width:28%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #link a
+        {
+            text-decoration:none;
+            color: black;
+            font-size: 20px;
+        }
+        #last
+        {
+            width:30%;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        #last input
+        {
+            display:flex;
+            margin-top:20px;
+            padding:15px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+        #last .fa-solid 
+        {
+            font-size:25px;
+        }
+
+             .container8
+        {
+          display:flex;
+        }
+        .container8 div
+        {
+          display:flex;
+          flex-direction:column;
+          width:100%;
+        }
+        .container8 a
+        {
+            text-decoration:none;
+            color:black;
+            margin-top:15px;
+        }
+        .container8 .icon
+        {
+            display:flex; flex-direction:row;
+        }
+        .container8 .icon i
+        {
+            margin-left:10px;
+            font-size:20px;
+        }
+        .container8 a:hover
+        {
+             text-decoration:underline;
+        }
+
+        #container
+      {
+        margin-top:20px;
+        margin-bottom:50px;
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:auto;
+        gap:20px 20px;
+        justify-content:space-evenly;
+       margin:auto;
+       margin-top:20px;
+        margin-bottom:50px;
+      }
+      #container>div img
+      {
+         width:90%; 
+      }
+      #container>div
+      {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+        </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="link">
+           <a href="women.html">Women</a>
+           <a href="men.html">Men</a>
+           <a href="">Jeans</a>
+           <a href="">Clearance</a>
+        </div>
+        <div id="logo">
+            <a href="index.html"><img src="logo.jpg" alt="error"></a>
+        </div>
+        <div id="last">
+            <form id="fff">
+           <input type="text" placeholder="Search" id="search">
+           </form>
+           <i class="fa-solid fa-location-dot"></i>
+           <i class="fa-solid fa-address-book"></i>
+           <div style="width:100px;background-color: white;" class="hide">
+               <a href="register.html"><button>Registration</button></a>
+               <button><a href="login.html">Sign-in</a></button>
+              </div>
+           <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+       </div>
+    <div id="container">
+
+    </div>
+
+    <div class="container8">
+        <div>
+            <a href="">Store</a>
+            <a href="">Order Status</a>
+            <a href="">Gift Cards/Balance</a>
+            <a href="">Feedback</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Shopping Help</h4>
+            <a href="">Help Desk</a>
+            <a href="">Returns & Exchanges</a>
+            <a href="">Price and price Match Policy</a>
+            <a href="">Shipping & Handling</a>
+            <a href="">Size Charts</a>
+            <a href="">Buy Online,Pick Up In store</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Questions?</h5>
+            <a style="font-weight:bold;" href="">Chat With Us</a>
+            <p>Available9AM-12AMEST</p>
+            <a style="font-weight:bold;" href="">Call Us</a>
+            <p>1.877.289.2376</p>
+            <a style="font-weight:bold;" href="">Contact Us</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">About Us</h4>
+            <a href="">About Aeropostale</a>
+            <a href="">Carrers</a>
+            <a href="">Supply Chain</a>
+            <a href="">Shipping & Handling</a>
+            <a href="">Aero impact</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Get the latest styles & offers:</h4>
+            <input style="width:200px;border-radius:20px;border:2px solid black; height:40px;" type="text" placeholder="Enter Email">
+            <p style="font-size:11px;">For more information, please see our Privacy Policy. California residents, see our California Privacy Notice and Do Not Sell My Personal Information page.</p>
+            <h4 style="color:darkblue;">Follow Us</h4>
+            <div class="icon">
+                <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+       </div>
+</body>
+
+<script>
+      let data1=[];
+    let container=document.getElementById("container");
+    let ls=JSON.parse(localStorage.getItem("ata"));
+    if(ls===null)
+    {
+      ls=[];
+    }
+    let api=" https://mocki.io/v1/9a6e3f9f-cb74-4b7f-b38c-418994201db1";
+    fetch(api).then((res)=>{
+        return res.json();
+    }).then((data)=>{
+        data1=data;
+        show(data);
+    }).catch((err)=>{
+        console.log(err);
+    })
+    function show(data)
+    {
+      container.innerHTML="";
+      for(let i=0;i<data.length;i++)
+      {
+       let div1=document.createElement("div");
+       let img=document.createElement("img");
+       let head=document.createElement("h2");
+       let title=document.createElement("p");
+       let price=document.createElement("p");
+       let btn=document.createElement("button");
+       btn.style.backgroundColor="lightblue";
+       btn.innerText="Add To Cart";
+       btn.addEventListener("click",function(){
+          let res=duplicate(data[i])
+          {
+            if(res)
+          {
+            alert("Product Already in Cart");
+          }
+          else
+          {
+            alert("Product Added To Cart");
+            ls.push({...data[i],quantity:1});
+          localStorage.setItem("ata",JSON.stringify(ls));   
+          }
+          }
+         })
+       price.innerText=data[i].price;
+       head.innerText=data[i].item;
+       title.innerText=data[i].title;
+       img.setAttribute("src",data[i].image);
+       div1.append(img,head,title,price,btn);
+       container.append(div1); 
+      }
+    }
+
+    let filt=document.getElementById("fff");
+    filt.addEventListener("submit",function(event){
+        event.preventDefault();
+        let search=document.getElementById("search");
+      let value1=search.value;
+      console.log(value1);
+      if(value1==="")
+      {
+        show(data1);
+      }
+      else
+      {
+      let filtered=data1.filter((ele)=>{
+        if(ele.item===value1){
+          return true;
+        }
+      })
+      show(filtered);
+    }
+    })
+
+    
+    function duplicate(data)
+    {
+      for(let i=0;i<ls.length;i++)
+      {
+        if(data.id===ls[i].id)
+        {
+          return true;  
+        }
+      }
+      return false;  
+    }
+</script>
+</html>
