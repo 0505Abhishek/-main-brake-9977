@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8a24ccc1f0.js" crossorigin="anonymous"></script>
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main
+        {
+          margin-left:10px;
+          margin-right:10px;
+        }
+        #nav
+        {
+            display:flex;
+            justify-content:space-evenly;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height:110px;
+            align-items: center;
+        }
+        #link
+        {
+            display:flex;
+            width:28%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #link a
+        {
+            text-decoration:none;
+            color: black;
+            font-size: 20px;
+        }
+        #last
+        {
+            width:30%;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        #last input
+        {
+            display:flex;
+            margin-top:20px;
+            padding:15px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+        #last .fa-solid 
+        {
+            font-size:25px;
+        }
+
+
+        
+        #div2
+        {
+            margin-top:10px;
+            background-image: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwce79bcc9/images/homepage/2020/060420/060420%20DESKTOP%20PRIDE%20BANNER@2x.jpg");
+            background-size:cover;
+            width:100%;
+            height:200px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #div2 div
+        {
+            text-align:center;
+            color:white;
+        }
+
+        .container
+        {
+            display:flex;
+            margin-top: 15px;
+        }
+        .container .banner
+        {
+            width:50%;
+            margin-left: 15px;
+        }
+        .container .banner1
+        {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-auto-rows:auto;
+            width:50%;
+            gap:0px 10px;
+            justify-content: center;
+        }
+        .container .banner1 button
+        {
+            border: 1px solid red;
+            color:red;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-left:10px;
+            margin-top:10px;
+            margin-right:10px;
+            border-radius:5px;
+            background-color: white;
+        }
+        .container .banner1 button:hover
+        {
+            color:white;
+            background-color: red;
+        }
+        .mcontainer .image
+        {
+            margin-right:10px;
+            margin-left:10px;
+            margin:auto;
+            margin-top:20px;
+        }
+
+        .container2
+        {
+            display:flex;
+            align-items: center;
+            width:100%;
+            background-color:#ee5e68;
+            color:white;
+            margin-top:20px;
+        }
+        .container2 .div1
+        {
+            width:60%;
+            margin-left:20px;
+            margin-right:30px;
+            padding-right:50px;
+        }
+        .container2 .div2 
+        {
+           display:flex;
+           justify-content: center;
+           width:40%;
+        }
+        
+        .container2 .div2 button
+        {
+            width:40%;
+            height:60px;
+            background-color:#ee5e68;
+            border: 3px solid white;
+            color:white;
+        }
+        .container2 .div2 button:hover
+        {
+            background-color:white;
+            border: 3px solid black;
+            color:black; 
+        }
+
+        .container3
+        {
+            display:flex;
+            height: fit-content;
+        }
+        .container3 .img1
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .container3 .img1 .img1_img
+        {
+            background-image:url("060420 DESKTOP GIRLS SHORTS@2x.jpg");
+            background-size: cover;
+            color:white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height:570px;
+            border-radius:20px;   
+        }
+        .container3 .img1 .img1_img button
+        {
+            width:50%;
+            padding:10px;
+        }
+        .container3 .img1 .img1_img button:hover{
+            background-color:darkblue;
+            color:white;
+        }
+
+        .container3 img
+        {
+            width:100%
+        }
+        .container3>div
+        {
+            display: flex;
+        }
+        .container3 .img2 img
+        {
+            height:fit-content;
+        }
+        .container3 .img2 div
+        {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            height:fit-content;            
+        }
+
+        .container3 .img2 div p
+        {
+            margin:0px;
+            padding:0px;
+            font-weight:bold;
+        }
+        .container3 .img2
+        {
+            width:80%;
+        }
+        
+
+        .container4
+        {
+            background-image:url("060420\ DESKTOP\ STORE\ ASSET@2x.jpg");
+            background-size:cover;
+            width:100%;
+            height:auto;
+            margin-top:15px;
+            border-radius:20px;
+        }
+
+        .container4>div
+        {
+            display:flex;
+            flex-direction:column;
+             width:100%;
+             align-items: center;
+             color:white;
+             font-size:20px;
+        }
+        .container4 .btn
+        {
+         display:flex;
+         margin:10px;
+         width:50%;
+        }
+
+        .container4 .btn button
+        {
+            width:100%;
+            padding:10px;
+            background-color: transparent;
+            border:2px solid white;
+            color:white;
+            margin:10px;
+        }
+        .container4 .btn button:hover{
+            background-color:white;
+            color:black;  
+        }
+
+        .container5
+        {
+            width:100%;
+            display:flex;
+            margin-top:15px;
+        }
+        .container5 .back
+        {
+            background-image:url(060420\ DESKTOP\ TEES\ BACKGROUND@2x.jpg);
+            background-size:cover;
+            width:80%;
+            height:500px;
+            margin-left:20px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .container5 img
+        {
+            width:100%;
+            height:500px;
+        }
+        .container5 .back img
+        {
+            width:100%;
+           height: 450px;
+           margin:40px;
+           border-radius:15px;
+        }
+        .container5 .back .text
+        {
+            color:white;
+            width:20%;
+            display:flex;
+            font-size:19px;
+            flex-direction:column;
+            align-items: center;
+        }
+        .container5 .back .text button
+        {
+            margin-top:10px;
+            width:100%;
+            padding:10px;
+        }
+        .container5 .back .text button:hover
+        {
+            background-color:darkblue;
+            color:white;
+            border:2px solid darkblue;
+            transition: 0.5s;
+        }
+
+
+        .container6
+        {
+            width:100%;
+            border:1px solid olive;
+            height:400px;
+            display:flex;
+        }
+       .container6 .div1
+        {
+            width:35%;
+            border:1px solid olive;
+            height:400px;
+        }
+        .container6 .div2
+        {
+            width:30%;
+            border:1px solid olive;
+            height:400px;
+        }
+
+        .container7
+        {
+            background-image:url(ECO_DESKTOP@2x-min.jpg);
+            background-size:cover;
+            width:100%;
+            height:600px;
+        }
+        .container7 div
+        {
+           display:flex;
+           flex-direction:column;
+           align-items: center;
+           font-size:20px;
+           width:30%;
+           color:white;
+           margin-left:50%;
+           padding-top:15%;
+        }
+        .container7 div button
+        {
+            margin-top:15px;
+            padding:10px;
+            width:50%;
+        }
+        .container7 div button:hover
+        {
+            border:4px solid white;
+            color:white;
+            background-color: darkblue;
+            transition:0.5s;
+        }
+
+        .container8
+        {
+          display:flex;
+        }
+        .container8 div
+        {
+          display:flex;
+          flex-direction:column;
+          width:100%;
+        }
+        .container8 a
+        {
+            text-decoration:none;
+            color:black;
+            margin-top:15px;
+        }
+        .container8 .icon
+        {
+            display:flex; flex-direction:row;
+        }
+        .container8 .icon i
+        {
+            margin-left:10px;
+            font-size:20px;
+        }
+        .container8 a:hover
+        {
+             text-decoration:underline;
+        }
+
+        </style>
+</head>
+<body>
+    <div id="nav">
+     <div id="link">
+        <a href="">Women</a>
+        <a href="">Men</a>
+        <a href="">Jeans</a>
+        <a href="">Clearance</a>
+     </div>
+     <div id="logo">
+        <img src="logo.jpg" alt="error">
+     </div>
+     <div id="last">
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-location-dot"></i>
+        <i class="fa-solid fa-address-book"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+     </div>
+    </div>
+
+
+    <div class="main">
+    <div id="div2">
+     <div><h2>AERO</h2></div>
+     <div><h2>STAND TALL. STAND PROUD. STAND OUT</h2>
+       <p>Take pride in who you are</p>
+       <p>Celebrate individuality together</p>
+    </div>
+    </div>
+   
+    <div class="mcontainer">
+    <div class="container">
+      <div class="banner">
+        <p style="color:#f28161;font-size:60px;font-weight:bold;margin:0px;padding:0px">50-70% Off Everything!</p>
+        <p style="color:#f28161;font-size:40px;margin:0px;padding:0px">& Our Biggest Shorts Event of The Season!</p>
+      </div>
+      <div class="banner1">
+      <button>Shop Girls</button>
+      <button>Shop Guys</button>
+      <button>Girls Shorts</button>
+      <button>Guys Shorts</button>
+      </div>
+    </div>
+    <div class="image"style="width:98%;">
+        <img style="width:100%;"src="DESKTOP@2x.jpg" alt="error">
+      </div>
+    </div>
+
+
+    <div class="container2">
+        <div class="div1"><p style="font-size:20px">POV:Aero Pride Ambassador</p>
+        <p style="font-size:18px">"It's the time of the year to honor our predecessors and the fight we
+            constantly give for equal rights, that small break from reality were we celebrate love and who we are"</p></div>
+        <div class="div2">
+         <button>Learn More</button>
+        </div>
+    </div>
+
+
+    <div class="container3">
+        <div class="img1">
+        <img style="height:75%"src="060420 GIRLS SHORTS PHOTO@2x.jpg" alt="error">
+        <div class="img1_img">
+            <h2 style="margin:0px;padding:0px">Girls</h2>
+            <h2 style="margin:0px;padding:0px">Shorts</h2>
+            <h2>$11.87 & Up</h2>
+            <p>Vibrant prints. Must-feel fabrics.</p>
+            <p>One-of-a-kind Aero style.</p>
+            <button>Girls Shorts</button>
+        </div>
+        </div>
+         <div class="img2">
+             <div><img src="BERMUDA.jpg" alt="error">
+                <p>Curvy</p>
+                <p>New!</p>
+            </div>
+             <div><img src="VINTAGE HIGH RISE.jpg" alt="error">
+                <p>Vintage High Rise</p>
+            </div>
+             <div><img src="MOM.jpg" alt="error">
+                <p>Mom</p>
+                <p>View</p>
+            </div>
+         </div>
+
+         
+       </div>
+       <div class="container4">
+         <div>
+            <img src="060420 SHOPPING BAG@2x.png" alt="error">
+            <h2>Nice To See You Again</h2>
+            <h4 style="margin:0px;padding:0px;">Certain Aero Locations Are Carefully Reopening</h4>
+            <p style="margin:0px;padding:0px;"> & offering FREE storefront pick up. We're taking extra </p>
+            <p style="margin:0px;padding:0px;">precautions to keep our customers and associates safe.</p>
+            <div class="btn">
+                <button>Find A Store</button>
+                <button>Free Store Pick Up</button>
+                <button>Learn More & Stay Safe</button>
+            </div>
+         </div>
+       </div>
+
+       <div class="container3">
+         <div class="img2">
+             <div><img src="SPR20_FIT_GUIDE_DENIM_GUYS_ATHLETICSKINNY-min.jpg" alt="error">
+                <p>Curvy</p>
+                <p>New!</p>
+            </div>
+             <div><img src="SPR20_FIT_GUIDE_DENIM_GUYS_STRAIGHT-min.jpg" alt="error">
+                <p>Vintage High Rise</p>
+            </div>
+             <div><img src="SPR20_FIT_GUIDE_DENIM_GUYS_SUPERSKINNY-min.jpg" alt="error">
+                <p>Mom</p>
+                <p>View</p>
+            </div>
+         </div>
+
+         <div class="img1">
+            <div class="img1_img">
+                <h2 style="margin:0px;padding:0px">Guys</h2>
+                <h2 style="margin:0px;padding:0px">Shorts</h2>
+                <h2>$12 & Up</h2>
+                <p>New Premium fabric elevated</p>
+                <p>with extra stretch for comfort</p>
+                <button>Guys Shorts</button>
+            </div>
+            <img style="height:95%"src="GUYS SHORTS PHOTO@2X.jpg" alt="error">
+            </div>
+       </div>
+
+
+       <div class="container5">
+        <div>
+            <img src="060420 GIRLS TEES@2x.jpg" alt="error">
+        </div>
+        
+        <div class="back">
+            <div class="text">
+                <h1 style="margin:0px;padding:0px">Tees &</h1>
+                <h1 style="margin:0px;padding:0px">Tanks</h1>
+                <h2>$6.87 & Up</h2>
+                <p>Wear what you feel with
+                    statement-making graphics
+                    and fun splashes of color.</p>
+                <button>Shop Girls Tees</button>
+                <button>Shop Guys Tees</button>
+            </div>
+            <div><img src="GUYS TEES@2x.jpg" alt="error"></div>
+        </div>
+       </div>
+
+
+       <div class="container6">
+         
+       </div>
+       
+       <div class="container7">
+        <div>
+         <p style="margin:0px;padding:0px">At Aero, we're committed to a better, brighter future.</p>
+         <p style="margin:0px;padding:0px">do better, look better, feel better... it's in our jeans.</p>
+         <button>Aero Sustainability Efforts</button>
+        </div>
+       </div>
+
+
+
+       <div class="container8">
+        <div>
+            <a href="">Store</a>
+            <a href="">Order Status</a>
+            <a href="">Gift Cards/Balance</a>
+            <a href="">Feedback</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Shopping Help</h4>
+            <a href="">Help Desk</a>
+            <a href="">Returns & Exchanges</a>
+            <a href="">Price and price Match Policy</a>
+            <a href="">Shipping & Handling</a>
+            <a href="">Size Charts</a>
+            <a href="">Buy Online,Pick Up In store</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Questions?</h5>
+            <a style="font-weight:bold;" href="">Chat With Us</a>
+            <p>Available9AM-12AMEST</p>
+            <a style="font-weight:bold;" href="">Call Us</a>
+            <p>1.877.289.2376</p>
+            <a style="font-weight:bold;" href="">Contact Us</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">About Us</h4>
+            <a href="">About Aeropostale</a>
+            <a href="">Carrers</a>
+            <a href="">Supply Chain</a>
+            <a href="">Shipping & Handling</a>
+            <a href="">Aero impact</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Get the latest styles & offers:</h4>
+            <input style="width:200px;border-radius:20px;border:2px solid black; height:40px;" type="text" placeholder="Enter Email">
+            <p style="font-size:11px;">For more information, please see our Privacy Policy. California residents, see our California Privacy Notice and Do Not Sell My Personal Information page.</p>
+            <h4 style="color:darkblue;">Follow Us</h4>
+            <div class="icon">
+                <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+       </div>
+    </div>
+
+</body>
+
+<script>
+    let div1=document.getElementsByClassName("container6");
+    let arr=["SPR20_FIT_GUIDE_DENIM_GIRLS_CHEEKY-min.jpg","SPR20_FIT_GUIDE_DENIM_GUYS_ATHLETICSKINNY-min.jpg"];
+</script>
+</html>
