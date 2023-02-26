@@ -116,7 +116,7 @@
            <a href="">Clearance</a>
         </div>
         <div id="logo">
-            <a href="page1.html"><img src="logo.jpg" alt="error"></a>
+            <img id="logo_img"src="logo.jpg" alt="error">
         </div>
         <div id="last">
            <input type="text" placeholder="Search">
@@ -126,7 +126,6 @@
             <a href="register.html"><button>Registration</button></a>
             <button><a href="login.html">Sign-in</a></button>
            </div>
-           <i class="fa-solid fa-bag-shopping"></i>
         </div>
         </div>
 
@@ -389,6 +388,7 @@
             clean();
             ls.push(obj);
             localStorage.setItem("data",JSON.stringify(ls));
+            window.location.href="index.html";   
         }
         function clean()
         {
@@ -414,6 +414,8 @@
             }
             return 0;
         }
-
     })
+
+    let limg=document.getElementById("logo_img");
+    limg.addEventListener("click",function(){alert("register first")});
 </script>

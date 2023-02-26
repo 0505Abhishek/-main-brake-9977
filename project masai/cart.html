@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://kit.fontawesome.com/8a24ccc1f0.js" crossorigin="anonymous"></script>
+    <title>Cart Page</title>
+    <style>
+         body
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main
+        {
+          margin-left:10px;
+          margin-right:10px;
+        }
+        #nav
+        {
+            display:flex;
+            justify-content:space-evenly;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height:110px;
+            align-items: center;
+        }
+        #link
+        {
+            display:flex;
+            width:28%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #link a
+        {
+            text-decoration:none;
+            color: black;
+            font-size: 20px;
+        }
+        #last
+        {
+            width:30%;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        #last input
+        {
+            display:flex;
+            margin-top:20px;
+            padding:15px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+        #last .fa-solid 
+        {
+            font-size:25px;
+        }
+
+             .container8
+        {
+          display:flex;
+        }
+        .container8 div
+        {
+          display:flex;
+          flex-direction:column;
+          width:100%;
+        }
+        .container8 a
+        {
+            text-decoration:none;
+            color:black;
+            margin-top:15px;
+        }
+        .container8 .icon
+        {
+            display:flex; flex-direction:row;
+        }
+        .container8 .icon i
+        {
+            margin-left:10px;
+            font-size:20px;
+        }
+        .container8 a:hover
+        {
+             text-decoration:underline;
+        }
+
+      #cart-container
+      {
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: auto;
+        gap:30px 20px;
+        justify-content: space-evenly;
+        text-align:center;
+        margin:auto;
+       margin-top:20px;
+        margin-bottom:50px;
+      }
+      #cart-container>div
+      {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding:25px;
+      }
+      #cart-container>div>img
+      {
+       width:90%;
+      }
+      .nav
+      {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+
+      #main
+      {
+        display:flex;
+        margin-right:20px;
+      }
+      #main #show_data
+      {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        width:40%;
+        height:500px;
+        background-color: whitesmoke;
+        margin-right:20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+        <div id="link">
+           <a href="women.html">Women</a>
+           <a href="men.html">Men</a>
+           <a href="men.html">Jeans</a>
+           <a href="">Clearance</a>
+        </div>
+        <div id="logo">
+            <a href="index.html"><img src="logo.jpg" alt="error"></a>
+        </div>
+        <div id="last">
+            <form id="fff">
+           <input type="text" placeholder="Search" id="search">
+           </form>
+           <i class="fa-solid fa-location-dot"></i>
+           <i class="fa-solid fa-address-book"></i>
+           <div style="width:100px;background-color: white;" class="hide">
+               <a href="register.html"><button>Registration</button></a>
+               <button><a href="login.html">Sign-in</a></button>
+           </div>
+        </div>
+       </div>  
+    <div id="main">
+      <div id="cart-container">
+      
+      </div>
+      <div id="show_data">
+        <h1>ORDER SUMMARY</h1>
+        <h4 id="total1">Quantity :- <span id="cart-item">0</span></h4>
+          <h4 id="total">Subtotal :-  <span id="cart-total">0</span></h4>
+          <h4>Delivery Charge :- 0</h4>
+          <h4 id="total">Total :-  <span id="cart-total1">0</span></h4>
+        <button style="background-color:lightseagreen;width:150px;height:50px" id="paybtn">Make payment</button>
+      </div>
+    </div>
+
+    <div class="container8">
+        <div>
+            <a href="">Store</a>
+            <a href="">Order Status</a>
+            <a href="">Gift Cards/Balance</a>
+            <a href="">Feedback</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Shopping Help</h4>
+            <a href="">Help Desk</a>
+            <a href="">Returns & Exchanges</a>
+            <a href="">Price and price Match Policy</a>
+            <a href="">Shipping & Handling</a>
+            <a href="">Size Charts</a>
+            <a href="">Buy Online,Pick Up In store</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Questions?</h5>
+            <a style="font-weight:bold;" href="">Chat With Us</a>
+            <p>Available9AM-12AMEST</p>
+            <a style="font-weight:bold;" href="">Call Us</a>
+            <p>1.877.289.2376</p>
+            <a style="font-weight:bold;" href="">Contact Us</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">About Us</h4>
+            <a href="">About Aeropostale</a>
+            <a href="">Carrers</a>
+            <a href="">Supply Chain</a>
+            <a href="">Shipping & Handling</a>
+            <a href="">Aero impact</a>
+        </div>
+        <div>
+            <h4 style="color:darkblue;">Get the latest styles & offers:</h4>
+            <input style="width:200px;border-radius:20px;border:2px solid black; height:40px;" type="text" placeholder="Enter Email">
+            <p style="font-size:11px;">For more information, please see our Privacy Policy. California residents, see our California Privacy Notice and Do Not Sell My Personal Information page.</p>
+            <h4 style="color:darkblue;">Follow Us</h4>
+            <div class="icon">
+                <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+  </body>
+
+
+  <script>
+    let contain=document.getElementById("cart-container");
+    let print=document.getElementById("cart-total");
+    let printt=document.getElementById("cart-total1");
+    let print1=document.getElementById("cart-item");
+    let cart=JSON.parse(localStorage.getItem("ata"));
+    if(cart==null)
+    {
+      cart=[];
+    }
+    show(cart);
+
+    function show(data)
+    {
+      contain.innerHTML="";
+      let sum=0;
+      let count=0;
+      if(data.length===0)
+      {
+        print.innerText=sum;
+        printt.innerText=sum;
+        print1.innerText=sum;
+      }
+      for(let i=0;i<data.length;i++)
+      {
+        let div1=document.createElement("div");
+       let image=document.createElement("img");
+       let head=document.createElement("h2");
+       let title=document.createElement("p");
+       let price=document.createElement("p");
+         let remove=document.createElement("button");
+         let increase=document.createElement("button");
+         let decrease=document.createElement("button");
+         let quantity=document.createElement("span");
+         sum+=data[i].quantity*data[i].price;
+         count+=data[i].quantity;
+         print1.innerText=count;
+         print.innerText=sum;
+         printt.innerText=sum;
+         quantity.innerText=data[i].quantity;
+         increase.innerText="+";
+         decrease.innerText="-";
+         remove.innerText="Remove";
+
+         increase.addEventListener("click",function(){
+          data[i].quantity+=1;          
+          localStorage.setItem("ata",JSON.stringify(cart));
+          show(cart);
+         })
+
+         decrease.addEventListener("click",function(){
+          if(data[i].quantity>1)
+          {
+            data[i].quantity-=1; 
+          localStorage.setItem("ata",JSON.stringify(cart));
+          show(cart);
+          }
+         })
+         remove.addEventListener("click",function(){
+          cart=cart.filter((ele,index)=>{
+               if(index!==i)
+               {
+                return true;
+               }
+          })
+          localStorage.setItem("cart",JSON.stringify(cart));
+          show(cart);
+         })
+         image.setAttribute("src",data[i].image);
+         head.innerText=data[i].item;
+         title.innerText=data[i].title;
+         price.innerText=data[i].price;
+
+         div1.append(image,head,title,price,increase,quantity,decrease,remove);
+         contain.append(div1);
+      }
+    }
+    
+    let btn=document.getElementById("paybtn");
+    btn.addEventListener("click",function(){
+     let value=printt.innerText;
+     if(value==0)
+     {
+      alert("Your cart is Empty");
+     }
+     else
+     {
+      window.location.href="payment.html";     
+     }
+    })
+  </script>
+</html>

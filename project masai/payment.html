@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8a24ccc1f0.js" crossorigin="anonymous"></script>
+
+    <style>
+        #container
+        {
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            width:30%;
+            height:250px;
+            margin:auto;
+            text-align:center;
+            margin-top:50px;
+            padding-top:40px;
+            background-color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+        <div id="container">
+        <i style="background-color:lightgreen;border-radius:10px; font-size:30px"class="fa-regular fa-circle-check"></i>
+        <h2 style="color:lightgreen;">Payment Successfull</h2>
+        <button style="background-color:lightblue;width:150px;height:40px"id="btn">Continue Shopping</button>
+    </div>
+</body>
+<script>
+    let btn=document.getElementById("btn");
+    btn.addEventListener("click",function(){
+        window.location.href="index.html";     
+
+    })
+</script>
+</html>

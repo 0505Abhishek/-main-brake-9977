@@ -115,7 +115,7 @@
            <a href="">Clearance</a>
         </div>
         <div id="logo">
-            <a href="page1.html"><img src="logo.jpg" alt="error"></a>
+            <img src="logo.jpg" alt="error">
         </div>
         <div id="last">
            <input type="text" placeholder="Search">
@@ -125,7 +125,6 @@
             <a href="register.html"><button>Registration</button></a>
             <button><a href="login.html">Sign-in</a></button>
            </div>
-           <i class="fa-solid fa-bag-shopping"></i>
         </div>
         </div>
 
@@ -207,12 +206,14 @@
     form.addEventListener("submit",function(event){
         let email=document.getElementById("email").value;
         let password=document.getElementById("pass").value;
-        
+        console.log(ls,email,typeof(password));
         for(let i=0;i<ls.length;i++)
         {
-            if(ls[i].email===email && ls[i].password===password)
+            console.log("hh",ls[i].email,ls[i].password);
+            if(ls[i].email===email && ls[i].password==password)
             {
-              window.location.href="page1.html";   
+                console.log("hh");
+              window.location.href="index.html";   
             }
         }
         alert("Please Register First");
